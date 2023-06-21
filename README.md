@@ -3,7 +3,7 @@ A public repo to demonstrate a possible bug in .Net Maui when defining a thickne
 
 This is a small modification of the template project.
 
-You can get exceptions at runtime when defining a thickness in a resource dictionary in XAML. Doing so as a string works in debug configuration, but the app will end raising exceptions on release. However, if you define the thickness as a Thickness object, it will work on both configurations.
+You can get exceptions at runtime when defining a thickness in a resource dictionary in XAML. Doing so as a string works in debug configuration, but the app will raise exceptions on release. However, if you define the thickness as a Thickness object, it will work on both configurations.
 
 You can easily reproduce the error and its work around by commenting and uncommenting lines in [MainPage.xaml](https://github.com/salvadorjesus/MauiBugThickness/blob/41cc245cf733ccee2f38a97c8972c012c2216c53/Maui%20Bug%20Thickness/MainPage.xaml#L5-L16):
 
